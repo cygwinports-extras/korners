@@ -1,0 +1,11 @@
+--- origsrc/korners/CMakeLists.txt	2009-10-02 15:36:54.000000000 -0500
++++ src/korners/CMakeLists.txt	2010-01-17 19:17:28.535342600 -0600
+@@ -40,7 +40,7 @@ kde4_add_app_icon(klines_SRCS "hi*-app-k
+ 
+ kde4_add_executable(korners ${korners_SRCS})
+ 
+-target_link_libraries(korners ${KDE4_KDEUI_LIBS} kdegames )
++target_link_libraries(korners ${KDE4_KDEUI_LIBS} kdegames ${QT_QTNETWORK_LIBRARY} )
+ 
+ ######### install ####################################################
+ 

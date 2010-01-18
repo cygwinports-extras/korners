@@ -1,0 +1,6 @@
+category: Games KDE
+requires: libgcc1 libkdecore5 libkdegames5 libQtCore4 libQtGui4 libQtNetwork4 libQtSvg4 libstdc++6
+sdesc: "KDE Helma game"
+ldesc: "Korners is a simple board game for KDE. This game is also known 
+as Helma. Your aim is to place your caps on opponents base faster than 
+he does it with yours."

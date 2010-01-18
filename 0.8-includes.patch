@@ -1,0 +1,54 @@
+--- origsrc/korners/korners_netgame_dialog.h	2009-09-23 14:45:27.000000000 -0500
++++ src/korners/korners_netgame_dialog.h	2010-01-17 19:15:40.291151400 -0600
+@@ -2,7 +2,7 @@
+ #ifndef KORNERS_NETGAME_DIALOG
+ #define KORNERS_NETGAME_DIALOG
+ 
+-#include "build/ui_korners_netgame_dialog.h"
++#include "ui_korners_netgame_dialog.h"
+ 
+ 
+ class KornersNetgameDialog : public QDialog
+--- origsrc/korners/korners_netgame_dialog_ip.h	2009-09-22 15:07:06.000000000 -0500
++++ src/korners/korners_netgame_dialog_ip.h	2010-01-17 19:15:44.419387500 -0600
+@@ -2,7 +2,7 @@
+ #ifndef KORNERS_NETGAME_DIALOG_IP
+ #define KORNERS_NETGAME_DIALOG_IP
+ 
+-#include "build/ui_korners_netgame_dialog_ip.h"
++#include "ui_korners_netgame_dialog_ip.h"
+ 
+ 
+ class KornersNetgameDialogIp : public QDialog
+--- origsrc/korners/korners_netgame_settings.h	2009-09-26 15:03:06.000000000 -0500
++++ src/korners/korners_netgame_settings.h	2010-01-17 19:15:22.547136500 -0600
+@@ -4,7 +4,7 @@
+ 
+ #include <QDialog>
+ 
+-#include "build/ui_korners_network_settings.h"
++#include "ui_korners_network_settings.h"
+ 
+ 
+ class KConfigSkeleton; 
+--- origsrc/korners/korners_render.cpp	2009-09-30 14:11:31.000000000 -0500
++++ src/korners/korners_render.cpp	2010-01-17 19:16:42.933734300 -0600
+@@ -1,6 +1,6 @@
+ 
+ #include "korners_render.h"
+-#include "build/korners.h"
++#include "korners.h"
+ #include <KSvgRenderer>
+ #include <KPixmapCache>
+ #include <QString>
+--- origsrc/korners/korners_window.cpp	2009-10-01 15:21:27.000000000 -0500
++++ src/korners/korners_window.cpp	2010-01-17 19:16:52.086257800 -0600
+@@ -3,7 +3,7 @@
+ #include "korners_widget.h"
+ #include "korners_render.h"
+ #include "korners_scene.h"
+-#include "build/korners.h"
++#include "korners.h"
+ 
+ #include "korners_netgame_dialog.h"
+ #include "korners_netgame_dialog_ip.h"
