@@ -1,0 +1,19 @@
+inherit kde4
+
+NAME="korners"
+VERSION=0.84
+RELEASE=1
+CATEGORY="Games"
+SUMMARY="KDE Helma game"
+DESCRIPTION="Korners is a simple board game for KDE. This game is also known
+as Helma. Your aim is to place your caps on opponents base faster than he
+does it with yours."
+HOMEPAGE="http://code.google.com/p/korners/"
+SRC_URI="https://korners.googlecode.com/files/korners_${VERSION}.tar.gz"
+SRC_DIR=${VERSION}
+
+PATCH_URI="
+	0.8-cmake.patch
+	0.8-includes.patch
+	0.84-libkdegamesprivate.patch
+"

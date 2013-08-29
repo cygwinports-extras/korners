@@ -1,0 +1,35 @@
+--- origsrc/0.84/CMakeLists.txt	2013-08-29 04:18:24.032020200 -0500
++++ src/0.84/CMakeLists.txt	2013-08-29 04:28:04.588226100 -0500
+@@ -43,7 +43,7 @@ kde4_add_app_icon(klines_SRCS "hi*-app-k
+ 
+ kde4_add_executable(korners ${korners_SRCS})
+ 
+-target_link_libraries(korners ${KDE4_KDEUI_LIBS} kdegames ${QT_QTNETWORK_LIBRARY} )
++target_link_libraries(korners ${KDE4_KDEUI_LIBS} kdegames kdegamesprivate ${QT_QTNETWORK_LIBRARY} )
+ 
+ ######### install ####################################################
+ 
+--- origsrc/0.84/korners_render.cpp	2013-08-29 04:18:24.295035200 -0500
++++ src/0.84/korners_render.cpp	2013-08-29 04:26:55.344265600 -0500
+@@ -23,7 +23,8 @@
+ #include <KSvgRenderer>
+ #include <KPixmapCache>
+ #include <QString>
+-#include <KGameTheme>
++#define USE_UNSTABLE_LIBKDEGAMESPRIVATE_API
++#include <libkdegamesprivate/kgametheme.h>
+ #include <KLocale>
+ #include <QPainter>
+ 
+--- origsrc/0.84/korners_window.cpp	2013-08-29 04:18:24.298035400 -0500
++++ src/0.84/korners_window.cpp	2013-08-29 04:26:10.671710500 -0500
+@@ -34,7 +34,8 @@
+ #include <KActionCollection>
+ #include <KStandardAction>
+ #include <KStandardGameAction>
+-#include <KGameThemeSelector>
++#define USE_UNSTABLE_LIBKDEGAMESPRIVATE_API
++#include <libkdegamesprivate/kgamethemeselector.h>
+ #include <KIcon>
+ #include <KScoreDialog>
+ #include <KConfigDialog>
